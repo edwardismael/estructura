@@ -1,14 +1,25 @@
-let numbers = [];
-let even = [];
-let odd = [];
+const productos = [
+  {
+    id: 1,
+    nombre: "Laptop",
+    precio: 12000,
+  },
 
-for (let i; i < 50; i++)
-    numbers.push(i + 1);
+  {
+    id: 2,
+    nombre: "Mouse",
+    precio: 300,
+  },
 
-numbers.forEach((number) => {
-    if (number % 2 === 0) {
-        even.push(number)
-    } else {
-        odd.push(odd)
-    }
-})
+  {
+    id: 3,
+    nombre: "Teclado",
+    precio: 800,
+  },
+];
+
+console.table(productos, ["nombre", "precio"]);
+
+productos.forEach((producto) => {
+  console.log(`${producto.nombre}: $${producto.precio}\n---------------`);
+});
