@@ -20,6 +20,10 @@ const productos = [
 
 console.table(productos, ["nombre", "precio"]);
 
+document.getElementById("verreporte").addEventListener("click", () => {
+  window.location.href = "/ver_reporte.html";
+});
+
 productos.forEach((producto) => {
   console.log(`${producto.nombre}: $${producto.precio}\n---------------`);
 });
